@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    direction: rtl;
+}
+body{
+    background-image:linear-gradient( #2C3E50 10%, #000000);
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+}
+h1{
+    color: aqua;
+}
+.imgs {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin-right: 40px;
+    position: relative;
+  }
+
+  .imgs::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url('http://www.nilehi.edu.eg/static/img/lo.png');
+    filter: blur(15px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index:-1;
+    transform: scale(0.7);
+  }
+  
+  .img1, .img2 {
+    width: 42%;
+    height: 71%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 90px;
+    filter: brightness(70%);
+    box-shadow: rgb(0, 140, 255) 0px 0px 10px 1px;
+    transition: transform 1s ease-in-out;
+  }
+  .img1:hover,.img2:hover{
+    transform: scale(1.1);
+    box-shadow: rgb(0, 140, 255) 0px 0px 10px 0px;
+
+  }
+  .img1{
+    background-image: url('http://www.nilehi.edu.eg/static/img/h.jpeg');
+  }
+.img2{
+    background-image: url('http://www.nilehi.edu.eg/static/img/k.jpeg');
+    margin-top: 20%;
+    margin-right: 40px;
+}
